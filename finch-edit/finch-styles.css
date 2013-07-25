@@ -1,0 +1,98 @@
+.edit-link{
+  display:none;
+padding:10px 25px;
+overflow: visible;
+box-shadow:0 0 3px #888;
+border-radius:3px;
+background:rgba(255,255,255,1);
+  color:#000;
+font-weight:bold;
+position:absolute;
+text-align:center;
+z-index:100;
+bottom:0;
+}
+.field-container{
+  position:relative;
+}
+
+.columnedit {
+  width: 40px;
+  bottom: -15px;
+  right: 0;
+}
+#poststuff > .postbox + .field {
+  margin: 10px;
+}
+#editform {
+  display: none;
+  max-height: 700px;
+  overflow-y: scroll;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 2px;
+  box-shadow: 0 0 8px #888;
+  top: 48px;
+  padding: 0;
+  left: 20px;
+  z-index: 9999;
+}
+#editform #poststuff {
+  padding: 10px;
+}
+#editform .acf_postbox .field {
+  padding: 0 10px;
+}
+#editform .formhandle {
+  width: 100%;
+  background-color: #58a;
+  height: 30px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+#editform .formhandle #formcancel {
+  display: block;
+  color: #fafafa;
+  font-weight: 700;
+  border: 1px solid #66a;
+  box-shadow: 0 0 2px #fff;
+  width: 18px;
+  height: 16px;
+  line-height: 14px;
+  text-align: center;
+  font-size: 14px;
+  float: right;
+  margin: 6px 7px 0 0;
+  border-radius: 2px;
+  text-transform: lowercase;
+  background: #59b;
+  -moz-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  -webkit-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  -o-transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+  cursor: pointer;
+}
+#editform .formhandle #formcancel:hover {
+  background: #d44;
+  border: 1px solid #822;
+  color: #fff;
+  text-shadow: 0 0 1px #000;
+}
+#editform #message {
+  display: none;
+}
+#editform input[type=submit] {
+  float: left;
+}
+#editform #cancel-button {
+  float: left;
+}
+#editform #preview-button {
+  float: left;
+}
+#editform .acf_postbox p.label {
+  display: none;
+}
+.field {
+  display: none;
+}
