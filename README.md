@@ -10,8 +10,8 @@ eg
 ```<div id="title" class="editable-field"><?php the_field("title"); ?></div>```
 4. Add the following id and class to your the_content and the_title, and they become editable!
 eg
-```	<h1 id="the-title" class="editable-field"><?php the_title(); ?></h1>
-	<div id="the-content" class="editable-field"><?php the_content(); ?></div>```
+```	<h1 id="the-title" class="editable-field"><?php the_title(); ?></h1>```
+```<div id="the-content" class="editable-field"><?php the_content(); ?></div>```
 
 
 -- August 6th 2013 --
