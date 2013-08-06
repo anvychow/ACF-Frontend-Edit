@@ -16,17 +16,21 @@ Front end editor for advanced custom fields
 
 == Installation ==
 
-This section describes how to install the plugin and get it working.
+1. Install ACF
+2. Add Fields
+3. When adding fields to your theme, you must give the field an ID that is equivalent to the field name, and a class of "editable-field"
+eg
+```<div id="title" class="editable-field"><?php the_field("title"); ?></div>```
+4. Add the following id and class to your the_content and the_title, and they become editable!
+eg
+```	<h1 id="the-title" class="editable-field"><?php the_title(); ?></h1>
+	<div id="the-content" class="editable-field"><?php the_content(); ?></div>```
 
 == Frequently Asked Questions ==
 
-= A question that someone might have =
+= Q =
 
-An answer to that question.
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
+A
 
 == Screenshots ==
 
@@ -34,24 +38,22 @@ Answer to foo bar dilemma.
 the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets 
 directory take precedence. For example, `/assets/screenshot-1.png` would win over `/tags/4.3/screenshot-1.png` 
 (or jpg, jpeg, gif).
-2. This is the second screen shot
+
 
 == Changelog ==
 
-= 1.0 =
-* A change since the previous version.
-* Another change.
+= 0.1.1 =
+* Added support for the_content and the_title
+* Started using tinyMCE.triggersave(); - other code could probably be refactored using this
+* Issue: Had to make an altered version of acf_form(); - acf_form_finch();
 
-= 0.5 =
-* List versions from most recent at top to oldest at bottom.
+= 0.1.0 =
+* Converted to a crappy plugin
 
 == Upgrade Notice ==
 
-= 1.0 =
-Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
-
-= 0.5 =
-This version fixes a security related bug.  Upgrade immediately.
+= 0.1.1 =
+Allows for native WP field front end editing.
 
 == Arbitrary section ==
 

@@ -1,5 +1,4 @@
 jQuery(document).ready(function( $ ) {
-console.log("hello");
 		fieldInputValue = {};
 
 		function ttLiveEdit(thattt){
@@ -141,6 +140,7 @@ function checkForLoadedIFrames() {
                $('iframe').contents().find('body').on("keyup", function(){
                	console.log("working");
                	var that = $(this);
+               	tinyMCE.triggerSave(); 
 				ttLiveEdit(that);
                });
                $("#editform").on("click", ".active-field", function(){
