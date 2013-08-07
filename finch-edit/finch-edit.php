@@ -112,7 +112,9 @@ function finch_content(){
         add_action('save_post', 'finch_content');
     }
 }
+if (!is_admin()){
 add_action('acf/save_post', 'finch_content');
+}
 
 function acf_form_finch( $options = array() )
 {
