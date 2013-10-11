@@ -8,7 +8,7 @@ Janky Front End Editing for Wordpress + Advanced Custom Fields
 3. When adding fields to your theme, you must give the field an ID that is equivalent to the field name, and a class of "editable-field"
 eg
 ```<div id="title" class="editable-field"><?php the_field("title"); ?></div>```
-4. Add the following id and class to your the_content and the_title, and they become editable!
+4. Add the following id and class to your the_content and the_title, and they become editable! *YOU HAVE TO ADD AN EDITABLE CUSTOM FIELD FIRST FOR THIS TO WORK
 eg
 ```	<h1 id="the-title" class="editable-field"><?php the_title(); ?></h1>```
 ```<div id="the-content" class="editable-field"><?php the_content(); ?></div>```
