@@ -12,6 +12,7 @@ eg
 eg
 ```	<h1 id="the-title" class="editable-field"><?php the_title(); ?></h1>```
 ```<div id="the-content" class="editable-field"><?php the_content(); ?></div>```
+
 *YOU HAVE TO ADD AN EDITABLE CUSTOM FIELD FIRST FOR THIS TO WORK
 
 -- August 6th 2013 --
