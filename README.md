@@ -1,6 +1,6 @@
 ACF-Frontend-Edit
 =================
-Janky Front End Editing for Wordpress + Advanced Custom Fields
+Basic Front End Editing for Wordpress + Advanced Custom Fields
 -----------------
 
 1. Install ACF
